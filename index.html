@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mustache</title>
+        <meta charset="utf-8"/>
+        <script src="node_modules/mustache/mustache.js"></script>
+        <script src="node_modules/handlebars/dist/handlebars.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="templatesCompiled.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>Ejemplo de Mustache</h1>
+        <div id="salida"></div>
+        <div id="salida2"></div>
+        <script id="plantilla" type="x-tmpl-mustache">
+            Hola {{persona}}
+        </script>
+        <div id="salida3"></div>
+        <div id="salida4"></div>
+        <script id="plantilla-handlebars" type="text/x-handlebars-template">
+            <h1>{{titulo}}</h1>
+        </script>
+        <div id="salida5"></div>
+        <div id="salida6"></div>
+        <div id="salida7"></div>
+    </body>
+</html>

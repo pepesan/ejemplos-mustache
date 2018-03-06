@@ -1,0 +1,19 @@
+<h1>Hola {{titulo}}</h1>
+<div>
+    {{!comentario}}
+    {{!- comentario --}}
+    {{#if booleano}}
+        <h3>Hay booleano</h3>
+    {{/if}}
+    <h4>{{objeto_complejo.nombre}}</h4>
+    {{#with objeto_complejo}}
+        <h4>{{objeto_complejo.nombre}}</h4>
+    {{/with}}
+    <ul>
+    {{#each miarray}}
+           {{!- indice del array: objeto enposicion: otro valor: propiedad nombre del objeto -- }}
+        <li>{{@index}}:{{this}}:{{../titulo}}: {{name}}</li>
+    {{/each}}
+    </ul>
+    <h4>{{ayuda booleano}}</h4>
+</div>
